@@ -6,7 +6,7 @@ gray = rgb2gray(img);
 gray = medfilt2(gray, [5,5]);
 imshow(gray);
 
-% Determinar si el fons és clar o fosc per aplicar el tipus de binarització
+% Determinar si el fons es clar o fosc per aplicar el tipus de binarització
 bora = [gray(1,:), gray(end,:), gray(:,1)', gray(:,end)'];
 mitjana_bora = mean(bora);
 
